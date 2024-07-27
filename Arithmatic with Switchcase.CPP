@@ -1,0 +1,66 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int n,n1,n2,sum,con;
+    
+    do{
+    cout<<"1.Addition\n";
+    cout<<"2.Subtraction\n";
+    cout<<"3.Multiplication\n";
+    cout<<"4.Division\n";
+    cout<<"5.default\n";
+   
+        cout<<"Enter Your Choice:";
+        cin>>n;
+    
+    switch(n){
+          
+        case 1:
+        cout<<"Addition :\n";
+        cout<<"Enter The First Number:";
+        cin>>n1;
+        cout<<"Enter the Second Number:";
+        cin>>n2;
+        sum=n1+n2;
+        cout<<"the Sum of :"<<n1<<"+"<<n2<<"="<<sum<<"\n";
+        break;
+    
+     case 2:
+        cout<<"Subtraction :\n";
+        cout<<"Enter The First Number:";
+        cin>>n1;
+        cout<<"Enter the Second Number:";
+        cin>>n2;
+        sum=n1-n2;
+        cout<<"the Sum of :"<<n1<<"-"<<n2<<"="<<sum<<"\n";
+        break;
+    
+     case 3:
+        cout<<"Multification :\n";
+        cout<<"Enter The First Number:";
+        cin>>n1;
+        cout<<"Enter the Second Number:";
+        cin>>n2;
+        sum=n1*n2;
+        cout<<"the Sum of :"<<n1<<"*"<<n2<<"="<<sum<<"\n";
+        break;
+     case 4:
+        cout<<"Division :\n";
+        cout<<"Enter The First Number:";
+        cin>>n1;
+        cout<<"Enter the Second Number:";
+        cin>>n2;
+        sum=n1/n2;
+        cout<<"the Sum of :"<<n1<<"/"<<n2<<"="<<sum<<"\n";
+         break;
+         
+    case 5:
+        return 0;
+          }
+          
+    }while(n>0);
+}
