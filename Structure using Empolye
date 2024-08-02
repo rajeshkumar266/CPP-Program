@@ -1,0 +1,68 @@
+#include<iostream.h>
+#include<conio.h>
+
+   struct empolyee {
+   int id,salary;
+   char ename[20],disgi[15];
+   float jyear;
+
+};
+
+   int main(){
+   clrscr ();
+
+ struct empolyee e1,e2;
+ 
+
+   cout<<"Enter Empolyee id       : ";
+   cin>>e1.id;
+   cout<<"Enter Empolyee Name     : ";
+   cin>>e1.ename;
+   cout<<"Empolyee Disgination    : ";
+   cin>>e1.disgi;
+   cout<<"Empolyee Salary         : ";
+   cin>>e1.salary;
+   cout<<"Empolyee Joining year   : ";
+   cin>>e1.jyear;
+
+
+   cout<<"\nEnter Empolyee id       : ";
+   cin>>e2.id;
+   cout<<"Enter Empolyee Name     : ";
+   cin>>e2.ename;
+   cout<<"Empolyee Disgination    : ";
+   cin>>e2.disgi;
+   cout<<"Empolyee Salary         : ";
+   cin>>e2.salary;
+   cout<<"Empolyee Joining year   : ";
+   cin>>e2.jyear;
+
+
+   cout<<"\nCheck The Details:";
+
+   cout<<"\n------------------------------------------------------------------";
+
+   cout<<"\nid     =  " <<e1.id;
+   cout<<"\nename  =  " <<e1.ename;
+   cout<<"\ndisgi  =  " <<e1.disgi;
+   cout<<"\nsalary =  " <<e1.salary;
+   cout<<"\njyear  =  " <<e1.jyear<<endl;
+
+   cout<<"\n-------------------------------------------------------------------";
+
+
+   cout<<"\n-------------------------------------------------------------------";
+
+   cout<<"\nid     =  " <<e2.id;
+   cout<<"\nename  =  " <<e2.ename;
+   cout<<"\ndisgi  =  " <<e2.disgi;
+   cout<<"\nsalary =  " <<e2.salary;
+   cout<<"\njyear  =  " <<e2.jyear<<endl;
+
+   cout<<"-------------------------------------------------------------------";
+
+   getch();
+   return 0;
+
+}
+
