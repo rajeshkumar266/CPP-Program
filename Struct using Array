@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+
+struct student {
+   int sid,n;
+   char sname[50];
+   float fees;
+};
+
+int main(){
+  struct student stud[50];
+  clrscr();
+  int n;
+
+  cout<<"Enter no of students: ";
+  cin >> n;
+
+  for(int i=0;i<n;i++){
+   cout<<"\nEnter the details for Student " << i+1 << ":\n";
+   cout<<"================================\n";
+   cout<<"Enter A ID     : ";
+   cin>>stud[i].sid;
+   cout<<"\nEnter Sname  : ";
+   cin>>stud[i].sname;
+   cout<<"\nStudent Fees : ";
+   cin>>stud[i].fees;
+  }
+  clrscr();
+
+  for(i=0; i<n; i++){
+   cout<<"\n\nStudent "<<i+1 << ":\n";
+   cout<<"Student id        :"<<stud[i].sid;
+   cout<<"\nStudent name    :"<<stud[i].sname;
+   cout<<"\nStudent Fees    :"<<stud[i].fees;
+  }
+
+   getch();
+   return 0;
+}
