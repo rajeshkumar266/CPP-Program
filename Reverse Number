@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+
+int main(){
+   int i,n,arr[20];
+   clrscr();
+
+   cout<<"\nEnter The Value :";
+   cin>>n;
+
+for(i=0;i<n;i++)
+{
+cout<<"\nEnter The Array Value: ";
+cin>>arr[i];
+}
+for(i=n-1;i>=0;i--)
+{
+cout<<"\nReverse Number For: ";
+cout<<arr[i];
+}
+getch();
+return 0;
+}
