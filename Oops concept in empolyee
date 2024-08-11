@@ -1,0 +1,53 @@
+#include<iostream.h>
+#include<conio.h>
+
+class empolyee {
+
+ private:
+    char ename[50];
+    float esalary;
+
+ public:
+    int eid;
+
+    void set_Data(){
+    //cout<<"\nEnter ur EmpId     :";
+    //cin>>eid;
+    cout<<"\nEnter ur EmpName   : ";
+    cin>>ename;
+    cout<<"\nEnter ur EmpSalary : ";
+    cin>>esalary;
+    }
+    void display_Data(){
+    cout<<"\nEnter The Empid     : "<< eid <<endl;
+    cout<<"\nEnter The EmpName   : " <<ename<<endl;
+    cout<<"\nEnter The EmpSalary : "<<esalary<<endl;
+
+    //cout<<"Enter A EmpId : ";
+    }
+};
+
+ int main(){
+ clrscr();
+
+ empolyee e1,e2;
+ cout<<"\nEnter A EmpId         : ";
+ cin>>e1.eid;
+ e1.set_Data();
+
+ cout<<"\nEnter A EmpId          : ";
+ cin>>e2.eid;
+ e2.set_Data();
+
+
+ cout<<"\nAbout Empolyee 1 :";
+ e1.display_Data();
+ cout<<"\nAbout Empolyee 2 :";
+ e2.display_Data();
+
+ getch();
+return 0;
+}
+
+
+
