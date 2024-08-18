@@ -1,0 +1,78 @@
+#include<iostream.h>
+#include<string.h>
+#include<conio.h>
+#include<stdio.h>
+
+class Empolyee {
+ private:
+    char ename[50];
+    float esalary;
+    int eid;
+ public:
+    //setter method
+    void set_eid(int local_eid){          // Employee e1; e1.set_eid(123);
+       eid=local_eid;  // this->eid=eid;
+    }
+    //getter method
+    int get_eid(){
+       return eid;
+    }
+    void set_esalary(float sal){   //setter method
+       esalary=sal;
+    }
+    float get_esalary(){    	   //getter method
+       return esalary;
+    }
+    void set_ename(char* name){     //setter method
+       strcpy(ename , name);  //string.h
+    }
+    char* get_ename(){       	     //getter method
+       return ename;
+    }
+
+};
+
+ int main(){
+
+    Empolyee e1,e2;
+    clrscr();
+    //cout<<"\nEnter details for Employee 1   : ";
+   // cin>>e1.eid;   //private
+    e1.set_eid(123);
+    e1.set_ename("Rajesh");
+    e1.set_esalary(75000.50);
+
+    //cout<<"\nEnter details for Employee 2   : ";
+    e2.set_eid(124);
+    e2.set_ename("Kaviya");
+    e2.set_esalary(55000.50);
+
+
+
+    cout<<"\n\n==================================================================";
+
+    cout<<"\nEmpolyee Details:1 ";
+    cout<<"\n-------------------\n";
+    cout<< "Employee ID     :\t" << e1.get_eid() << endl;
+    cout<< "Employee Name   :\t" << e1.get_ename() << endl;
+    cout<< "Employee Salary :\t" << e1.get_esalary() <<"\n";
+
+    cout<<"\n===================================================================";
+    cout<<"\nEmpolyee Details:2 ";
+    cout<<"\n-------------------\n";
+    cout<< "Employee ID     :\t" << e2.get_eid() << endl;
+    cout<< "Employee Name   :\t" << e2.get_ename() << endl;
+    cout<< "Employee Salary :\t" << e2.get_esalary() <<"\n";
+
+
+    cout<<"\n==================================================================";
+
+    //cout<<"\n\t\tCreated By : Admin";
+    cout<<"\n\n\t\t\tThank You ...!";
+
+getch();
+return 0;
+}
+
+
+
