@@ -1,0 +1,56 @@
+//Constructor
+//Destructor
+#include<iostream.h>
+#include<conio.h>
+
+class Employee{
+  private:
+	 int empid;
+	 int empage;
+	 double empsalary;
+  public:
+	 //constructor function
+	 //Function/constructor overloading    Polymorphism OOPs
+	 Employee(){   //default constructor
+	     empid = 0;
+	     empage = 0;
+	     empsalary = 0.0;
+	 }
+	 Employee(int id, int age, double salary){ //parameterized constructor
+	     empid = id;
+	     empage = age;
+	     empsalary = salary;
+	 }
+	 //Destructor function
+	 ~Employee(){  //Tilde symbol
+	    //Non resource remove coding goes here...
+	    //eg: bgm,  font, unloading
+	    cout<<"\nDestructor called now...\n\n";
+	 }
+	 void display(){
+	    cout<<"Employee Id: " << empid << endl;
+	    cout<<"Employee Age: "<< empage << endl;
+	    cout<<"Employee Salary : " << empsalary << endl;
+	 }
+};
+
+
+void main(){
+  clrscr();
+  Employee e1;  // it will invoke default constructor
+  Employee e2;//(102,35,55000);  //Parameterized Constructor
+  {
+     Employee e3(103,25,60000);
+     e3.display();
+  }
+  //clrscr();
+  e1.display();
+  e2.display();
+  getch();
+}
+
+
+//nesting of member function
+//private member function
+//object as argument
+
